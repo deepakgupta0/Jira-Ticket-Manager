@@ -1,0 +1,292 @@
+
+/* GETTING STARTED */
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+*:focus {
+    outline: 0;
+}
+body{
+    margin: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #333;
+    opacity: 1; /* Firefox */
+  }
+
+/* TOOLBAR */
+
+
+.toolbar
+{
+    height: 12vh;
+    background-color:#222;
+    display:flex;
+    align-items: center;
+    padding-left:4rem;
+    /* gap between 2 elements should be */
+    gap:6rem;
+}
+.toolbar *
+{
+    border-radius: 0.5rem;
+}
+
+.filter-container
+{
+    height:60%;
+    width:20%;
+    background-color:#888;
+    /* to move filter container right either give margin to container or give padding left to parent */
+    /* margin-left:4rem; */
+    /* margin-right:5rem; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+.action-container
+{
+    height:60%;
+    width:12%;
+    background-color:#888;
+    display:flex;
+}
+
+.filter-colors
+{
+    height:100%;
+    width:25%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.filter-colors:hover
+{
+    background-color: rgba(209, 209, 209,0.1);
+}
+
+
+.add, .remove
+{
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.fa-plus
+{
+    color:white;
+}
+.fa-times
+{
+    color:white;
+}
+
+/* only apply hover styling when the div does not have the class 'pressed' */
+div.remove:not(.pressed):hover, div.add:hover 
+{
+    background-color: rgba(206, 176, 176, 0.1);
+}
+
+/* STATIC */
+
+.pink
+{
+    height:40%;
+    width:50%;
+    background-color: lightpink;
+}
+.blue
+{
+    height:40%;
+    width:50%;
+    background-color: lightblue;
+}
+.green
+{
+    height:40%;
+    width:50%;
+    background-color: lightgreen;
+}
+.black2
+{
+    height:40%;
+    width:50%;
+    background-color: black;
+}
+.fas
+{
+    font-size:x-large;
+}
+.pressed
+{
+    /* pointer-events: none; */
+    background-color: rgb(228, 46, 46);
+}
+
+
+
+/* MAIN TICKET CONTAINER */
+
+.main-container
+{
+    min-height:88vh;
+    padding:2rem;
+    /* border:4px dashed green; */
+    /* method 1 to centre align a box */
+    display:flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-wrap: wrap; 
+    gap:1rem;
+}
+
+/* MODAL CONTAINER  */
+
+.modal-container
+{
+    background-color: black;
+    height:18rem;
+    width:33rem;
+    display:flex;
+    position: absolute;
+    top:calc((100% - 18rem + 12vh)/2);
+    /* Note: The + and - operators must always be surrounded by whitespace. The operand of calc(50% -8px) for instance will be parsed as a percentage followed by a negative length, an invalid expression, while the operand of calc(50% - 8px) is a percentage followed by a minus sign and a length. Even further, calc(8px + -50%) is treated as a length followed by a plus sign and a negative percentage. The * and / operators do not require whitespace, but adding it for consistency is allowed, and recommended. */
+    /* for making modal responsive */
+    left:calc((100% - 33rem)/2)
+}
+.modal-task-container
+{
+    width:75%;
+    background-color: #333;
+}
+
+.modal-filter-container
+{
+    width:25%;
+    background-color: #888;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.desc-box
+{
+    height: 100%;
+    width: 100%;
+    padding:2rem;
+    color: slategray;
+    font-size:1.5rem;
+    line-height:2rem;
+    font-family:'Courier New', Courier, monospace;
+    resize:none;
+    background-color:#D1D1D1;
+
+}
+
+.modal-filters
+{
+    height: 11%;
+    width:55%;
+    margin:0.5rem;
+    border-radius: 0.8rem;
+}
+
+.modal-filters.lightpink:hover
+{
+    background-color: rgb(230, 132, 148);
+}
+.modal-filters.lightblue:hover
+{
+    background-color: rgb(31, 165, 199);
+}
+.modal-filters.lightgreen:hover
+{
+    background-color: rgb(63, 200, 70);
+}
+.modal-filters.black:hover
+{
+    background-color: rgb(104, 99, 99);
+}
+
+
+/* UTILITIES */
+.active
+{
+    display:none;
+}
+.border
+{
+    border:4px solid white;
+}
+
+
+
+/* TICKET GENERATION */
+.ticket-container
+{
+    height:10rem;
+    width:18rem;
+    background-color: #D1D1D1;
+    color: black;
+    font-size:0.8rem;
+    line-height:1rem;
+    font-family:'Courier New', Courier, monospace;
+    /* border: 0.5px solid black; */
+
+    /* for overflow container should have height */
+    
+    
+}
+h3
+{
+    margin:0;
+}
+.ticket-color
+{
+    width:100%;
+    height:0.5rem;
+    background-color: #000;
+}
+.ticket-inner
+{
+    padding:1rem;
+    margin-top:8%;
+    height:80%;
+    overflow-x: auto;
+}
+.text-description
+{
+    text-align:center;
+    word-break: break-word;
+}
+.ticket-id
+{
+    color: slategray;
+}
+
+.lightpink
+{
+    background-color: lightpink;
+}
+.lightblue
+{
+    background-color: lightblue;
+}
+.lightgreen
+{
+    background-color: lightgreen;
+}
+.black
+{
+    background-color: black;
+}

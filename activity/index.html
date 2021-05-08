@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="filter-container">
+            <!-- for ux purpose -->
+            <div class="filter-colors">
+                <div class="pink"></div>
+            </div>
+            <!-- for ux purpose -->
+            <div class="filter-colors">
+                <div class="blue"></div>
+            </div>
+            <!-- for ux purpose -->
+            <div class="filter-colors">
+                <div class="green"></div>
+            </div>
+            <!-- for ux purpose -->
+            <div class="filter-colors">
+                <div class="black2"></div>
+            </div>
+        </div>
+        <div class="action-container">
+            <div class="add">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="remove">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="modal-container active">
+            <div class="modal-task-container">
+                <textarea placeholder="Describe your task here..." name="" id="" cols="30" rows="10"
+                    class="desc-box"></textarea>
+            </div>
+            <div class="modal-filter-container">
+                <div class="modal-filters lightpink"></div>
+                <div class="modal-filters lightblue"></div>
+                <div class="modal-filters lightgreen"></div>
+                <div class="modal-filters black"></div>
+            </div>
+        </div>
+        <!-- <div class="ticket-container">
+            <div class="ticket-color"></div>
+            <div class="ticket-inner">
+                <h3 class="ticket-id">#sampleID</h3>
+                <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, harum.</p>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script>
+        // Instantiate
+        // agar pura koi variable hua toh uska access automatically niche sab files mai miljata h, hence we have access to uid in script.js
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
