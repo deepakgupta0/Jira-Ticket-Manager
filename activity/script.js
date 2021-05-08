@@ -59,6 +59,7 @@ if (localStorage.getItem("allTask")) {
 // ON CLICK MODAL OPEN
 
 addBtn.addEventListener("click", function (e) {
+    textArea.click();
     modalColors.forEach(function (color) {
         color.classList.remove("border");
     })

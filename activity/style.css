@@ -163,7 +163,7 @@ div.remove:not(.pressed):hover, div.add:hover
     /* Note: The + and - operators must always be surrounded by whitespace. The operand of calc(50% -8px) for instance will be parsed as a percentage followed by a negative length, an invalid expression, while the operand of calc(50% - 8px) is a percentage followed by a minus sign and a length. Even further, calc(8px + -50%) is treated as a length followed by a plus sign and a negative percentage. The * and / operators do not require whitespace, but adding it for consistency is allowed, and recommended. */
     /* for making modal responsive */
     left:calc((100% - 33rem)/2);
-    box-shadow:20px 20px 50px 15px grey; 
+    box-shadow:20px 20px 50px 15px rgba(0, 0, 0, 0.2); 
 }
 .modal-task-container
 {
@@ -193,6 +193,7 @@ div.remove:not(.pressed):hover, div.add:hover
     font-family:'Courier New', Courier, monospace;
     resize:none;
     background-color:#D1D1D1;
+    border-style: none;
 
 }
 
