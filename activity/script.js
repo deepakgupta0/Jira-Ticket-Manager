@@ -39,22 +39,22 @@ if (localStorage.getItem("allTask")) {
 
 // ON CLICK CHANGING BACKGROUND_COLOR
 
-for (let i = 0; i < filterColourOptions.length; i++) {
-    filterColourOptions[i].addEventListener("click", function () {
-        let childrenNodes = filterColourOptions[i].children;
-        let coloredElement = childrenNodes[0];
-        let color = coloredElement.classList[0];
-        if (color == "blue")
-            color = "lightblue"
-        else if (color == "green")
-            color = "lightgreen"
-        else if (color == "black2")
-            color = "grey"
-        else if (color == "pink")
-            color = "lightpink"
-        mainContainer.style.backgroundColor = color;
-    });
-}
+// for (let i = 0; i < filterColourOptions.length; i++) {
+//     filterColourOptions[i].addEventListener("click", function () {
+//         let childrenNodes = filterColourOptions[i].children;
+//         let coloredElement = childrenNodes[0];
+//         let color = coloredElement.classList[0];
+//         if (color == "blue")
+//             color = "lightblue"
+//         else if (color == "green")
+//             color = "lightgreen"
+//         else if (color == "black2")
+//             color = "grey"
+//         else if (color == "pink")
+//             color = "lightpink"
+//         mainContainer.style.backgroundColor = color;
+//     });
+// }
 
 // ON CLICK MODAL OPEN
 
