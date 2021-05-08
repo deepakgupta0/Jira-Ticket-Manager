@@ -40,6 +40,7 @@ body{
     height:60%;
     width:20%;
     background-color:#888;
+
     /* to move filter container right either give margin to container or give padding left to parent */
     /* margin-left:4rem; */
     /* margin-right:5rem; */
@@ -140,6 +141,7 @@ div.remove:not(.pressed):hover, div.add:hover
     min-height:88vh;
     padding:2rem;
     /* border:4px dashed green; */
+    background-color: rgb(240, 239, 239);
     /* method 1 to centre align a box */
     display:flex;
     justify-content: space-evenly;
@@ -160,7 +162,8 @@ div.remove:not(.pressed):hover, div.add:hover
     top:calc((100% - 18rem + 12vh)/2);
     /* Note: The + and - operators must always be surrounded by whitespace. The operand of calc(50% -8px) for instance will be parsed as a percentage followed by a negative length, an invalid expression, while the operand of calc(50% - 8px) is a percentage followed by a minus sign and a length. Even further, calc(8px + -50%) is treated as a length followed by a plus sign and a negative percentage. The * and / operators do not require whitespace, but adding it for consistency is allowed, and recommended. */
     /* for making modal responsive */
-    left:calc((100% - 33rem)/2)
+    left:calc((100% - 33rem)/2);
+    box-shadow:20px 20px 50px 15px grey; 
 }
 .modal-task-container
 {
@@ -236,11 +239,10 @@ div.remove:not(.pressed):hover, div.add:hover
 {
     height:10rem;
     width:18rem;
-    background-color: #D1D1D1;
+    background-color: #ddd;
     color: black;
-    font-size:0.8rem;
     line-height:1rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* border: 0.5px solid black; */
 
     /* for overflow container should have height */
@@ -268,6 +270,7 @@ h3
 {
     text-align:center;
     word-break: break-word;
+    font-size: 1.5rem;
 }
 .ticket-id
 {
@@ -289,4 +292,10 @@ h3
 .black
 {
     background-color: black;
+}
+
+.lock
+{
+    font-size:3em;
+    color: white;
 }
